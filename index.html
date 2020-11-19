@@ -1,0 +1,47 @@
+<html>
+
+
+	<head>
+		<title>Multiplication Table</title>
+		<script>
+			function printTable(){
+				var num = document.getElementById('txtNumber').value;
+				var num1 = document.getElementById('txtNumber1').value;
+				var num2 = document.getElementById('txtNumber2').value;
+				
+				for(var i=num; i<=num1; i++){
+					 document.write(i+" "+"X"+" "+num2+" "+"= "+(i*num2) + "<br>")
+				}
+			}
+		</script>
+		
+		
+		<style>
+	body{ background-color:#7FFFD4;}
+	.button{ padding:1.5%;
+	  border-radius: 20px;}
+	
+</style>
+	</head>
+
+	<body>
+	<br>
+	<br>
+
+	<br>
+		<input type="text" id="txtNumber" placeholder="Enter number"/>
+			<input type="text" id="txtNumber1" placeholder="Enter number"/>
+						<input type="text" id="txtNumber2" placeholder="Enter number"/>
+			
+			
+		<input type="button" value="Print Table" class="button" onclick='printTable()'/>
+		
+	
+
+
+
+
+
+</body>
+</html>
+
